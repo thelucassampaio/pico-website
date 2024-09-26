@@ -1,0 +1,65 @@
+.sectionContainer {
+  position: relative;
+  display: flex;
+  padding-block: 48px;
+  background-color: var(--color-palette-dark);
+  color: var(--text-white);
+}
+
+.twoColumnContentWrapper {
+  display: flex;
+  flex-grow: 1;
+  gap: 2rem;
+  max-width: 1280px;
+  margin-inline: auto;
+  padding: 2rem 1rem;
+}
+
+.singleColumnContentWrapper {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  max-width: 1280px;
+  margin-inline: auto;
+  padding: 2rem 1rem;
+}
+
+.twoColumnTextContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 16px;
+  width: 40%;
+}
+
+.singleColumnContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+}
+
+.subtitle {
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  font-size: 0.825rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  opacity: 0.8;
+}
+
+.title {
+  font-size: 2rem;
+}
+
+.paragraph {
+  color: var(--text-light);
+}
+
+.divider {
+  height: 4px;
+  width: 40px;
+  margin-block: 24px;
+  background-color: var(--color-palette-highlight);
+}

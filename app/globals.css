@@ -3,6 +3,7 @@
   --foreground: #171717;
 
   --text-white: #ffffff;
+  --text-light: #d2d2d2;
 
   /* Primary color shades */
   --color-primary-50: #e3f2fc;
@@ -21,8 +22,6 @@
   --color-palette-highlight: #58f0c1;
   --color-palette-background: #efefef;
   --color-palette-secondary: #d7cdff;
-
-  --inline-gutter: 2rem;
 }
 
 html,
