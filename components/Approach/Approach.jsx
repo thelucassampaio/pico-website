@@ -66,7 +66,10 @@ const Approach = () => {
     >
       <div className={styles.timelineContainer}>
         {timeline.map((item) => (
-          <div className={styles.timelineItem}>
+          <div
+            className={styles.timelineItem}
+            key={`${item.order}-${item.title}-${item.description}`}
+          >
             {item.order !== 0 && (
               <div className={styles.timelineArrow}>
                 <Image
