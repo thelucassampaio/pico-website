@@ -15,14 +15,16 @@ const HeroSection = () => {
     <section className={styles.heroSection}>
       <div className={styles.contentWrapper}>
         <div className={styles.content}>
-          <Image
-            src="/logo-white.png"
-            width={68}
-            height={68}
-            priority
-            alt="Logo da Pico Investimentos"
-            className={styles.logo}
-          />
+          <div className={styles.logoContainer}>
+            <Image
+              src="/logo-white.png"
+              width={68}
+              height={68}
+              priority
+              alt="Logo da Pico Investimentos"
+              className={styles.logo}
+            />
+          </div>
           <h1 className={`${styles.title} ${CalyaFont.variable}`}>
             PICO Investimentos
           </h1>

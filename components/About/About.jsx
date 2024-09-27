@@ -66,6 +66,7 @@ const About = () => {
               src={certificate.stampUrl}
               width={80}
               height={80}
+              style={{ borderRadius: "7px 1px" }}
               alt={`Selo ${certificate.name} - ${certificate.agency}`}
               key={`${certificate.name}-${certificate.agency}-${certificate.stampUrl}`}
             />

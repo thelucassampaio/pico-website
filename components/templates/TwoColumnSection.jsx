@@ -8,7 +8,11 @@ const TwoColumnSection = ({ subtitle, title, paragraph, children }) => {
           <span className={styles.subtitle}>{subtitle}</span>
           <h2 className={styles.title}>{title}</h2>
           <div className={styles.divider} />
-          <p className={styles.paragraph}>{paragraph}</p>
+          {typeof paragraph === "string" ? (
+            <p className={styles.paragraph}>{paragraph}</p>
+          ) : (
+            paragraph
+          )}
         </div>
         <>{children}</>
       </div>
