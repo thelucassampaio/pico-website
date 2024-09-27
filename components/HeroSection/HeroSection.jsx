@@ -28,9 +28,9 @@ const HeroSection = () => {
           <h1 className={`${styles.title} ${CalyaFont.variable}`}>
             PICO Investimentos
           </h1>
-          <p className={styles.subtitle}>
+          {/* <p className={styles.subtitle}>
             Pensando de forma diferente desde 2024
-          </p>
+          </p> */}
         </div>
       </div>
     </section>
