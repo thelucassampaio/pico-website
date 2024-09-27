@@ -5,7 +5,7 @@ const SingleColumnSection = ({ subtitle, title, children }) => {
     <section className={styles.sectionContainer}>
       <div className={styles.singleColumnContentWrapper}>
         <div className={styles.singleColumnContent}>
-          <span className={styles.subtitle}>{subtitle}</span>
+          {subtitle && <span className={styles.subtitle}>{subtitle}</span>}
           <h2 className={styles.title}>{title}</h2>
           <div className={styles.divider} />
           {children}

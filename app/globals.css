@@ -22,6 +22,10 @@
   --color-palette-highlight: #58f0c1;
   --color-palette-background: #efefef;
   --color-palette-secondary: #d7cdff;
+  --color-palette-dark-rgb: 16, 5, 47;
+  --color-palette-highlight-rgb: 88, 240, 193;
+  --color-palette-background-rgb: 239, 239, 239;
+  --color-palette-secondary-rgb: 215, 205, 255;
 }
 
 html,

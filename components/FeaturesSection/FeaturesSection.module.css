@@ -1,6 +1,6 @@
 .featuresContainer {
   display: flex;
-  gap: 16px;
+  gap: 24px;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -9,8 +9,22 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 16px;
+  justify-content: flex-start;
+  padding: 36px 12px;
   gap: 24px;
   text-align: center;
   max-width: 380px;
+  border-radius: 4px;
+  background-color: var(--color-palette-background);
+}
+
+.featureIcon {
+  padding: 16px;
+  border-radius: 100%;
+  background-color: rgba(var(--color-palette-dark-rgb), 0.9);
+}
+
+.featureDescription {
+  margin-block: auto;
+  color: var(--color-palette-dark);
 }
