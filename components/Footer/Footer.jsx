@@ -30,16 +30,6 @@ const Footer = () => {
               </a>
             </div>
           </div>
-          <div className={styles.links}>
-            <h3 role="h4">Links</h3>
-            <ul>
-              {menuItems.map((item, index) => (
-                <li key={index}>
-                  <a href={item.href}>{item.title}</a>
-                </li>
-              ))}
-            </ul>
-          </div>
           <div className={styles.info}>
             <h3 role="h4">Endereço</h3>
             <p>Av. Faria Lima, 1234</p>

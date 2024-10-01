@@ -1,6 +1,6 @@
 .footerContainer {
   background-color: var(--color-primary-900);
-  padding: 8px;
+  padding: 8px 64px;
   color: var(--text-white);
   display: flex;
   flex-direction: column;
@@ -9,13 +9,14 @@
 
 .columns {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .company {
   display: flex;
   flex-direction: column;
   flex-grow: 3;
-  padding-inline: 64px;
+  min-width: 450px;
 }
 
 .socialMediaContainer {
@@ -26,39 +27,13 @@
   color: var(--text-white);
 }
 
-.links {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 2;
-  gap: 16px;
-  padding-block: 16px;
-}
-
-.links ul {
-  list-style: none;
-  margin-left: 8px;
-}
-
-.links li {
-  margin-block: 4px;
-  font-size: 1.125rem;
-}
-
-.links a {
-  color: var(--text-white);
-  text-decoration: none;
-}
-
-.links a:hover {
-  text-decoration: underline;
-}
-
 .info {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
   gap: 16px;
   padding-block: 16px;
+  min-width: 300px;
 }
 
 .infoWithIcon {
@@ -73,4 +48,10 @@
   font-size: 0.825rem;
   padding: 8px;
   text-align: center;
+}
+
+@media (max-width: 500px) {
+  .footerContainer {
+    padding-inline: 16px;
+  }
 }
