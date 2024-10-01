@@ -1,0 +1,76 @@
+.footerContainer {
+  background-color: var(--color-primary-900);
+  padding: 8px;
+  color: var(--text-white);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.columns {
+  display: flex;
+}
+
+.company {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 3;
+  padding-inline: 64px;
+}
+
+.socialMediaContainer {
+  margin-block: 16px;
+}
+
+.socialMediaContainer a {
+  color: var(--text-white);
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+  gap: 16px;
+  padding-block: 16px;
+}
+
+.links ul {
+  list-style: none;
+  margin-left: 8px;
+}
+
+.links li {
+  margin-block: 4px;
+  font-size: 1.125rem;
+}
+
+.links a {
+  color: var(--text-white);
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 16px;
+  padding-block: 16px;
+}
+
+.infoWithIcon {
+  display: flex;
+  gap: 8px;
+  margin-block: 6px;
+}
+
+.copyright {
+  border-top: 1px solid var(--text-light);
+  color: var(--text-light);
+  font-size: 0.825rem;
+  padding: 8px;
+  text-align: center;
+}
