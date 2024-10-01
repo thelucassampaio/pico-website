@@ -16,6 +16,7 @@
   --color-primary-700: #0774cc;
   --color-primary-800: #0164ba;
   --color-primary-900: #00469b;
+  --color-primary-900-rgb: 0, 70, 155;
 
   /* Palette colors */
   --color-palette-dark: #10052f;
@@ -26,6 +27,9 @@
   --color-palette-highlight-rgb: 88, 240, 193;
   --color-palette-background-rgb: 239, 239, 239;
   --color-palette-secondary-rgb: 215, 205, 255;
+
+  /* Sizes */
+  --header-height: 60px;
 }
 
 html,

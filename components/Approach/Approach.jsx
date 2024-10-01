@@ -63,6 +63,7 @@ const Approach = () => {
       title="Na Pico, atuamos de forma independente e transparente"
       subtitle="Nossa abordagem"
       paragraph={<ApproachDetails />}
+      id="nossa-abordagem"
     >
       <div className={styles.timelineContainer}>
         {timeline.map((item) => (

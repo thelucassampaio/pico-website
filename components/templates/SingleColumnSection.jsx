@@ -1,8 +1,8 @@
 import styles from "./template.module.css";
 
-const SingleColumnSection = ({ subtitle, title, children }) => {
+const SingleColumnSection = ({ subtitle, title, id, children }) => {
   return (
-    <section className={styles.sectionContainer}>
+    <section className={styles.sectionContainer} id={id}>
       <div className={styles.singleColumnContentWrapper}>
         <div className={styles.singleColumnContent}>
           {subtitle && <span className={styles.subtitle}>{subtitle}</span>}

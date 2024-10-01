@@ -45,6 +45,7 @@ const FeaturesSection = () => {
     <SingleColumnSection
       title=" Na Pico atuamos e pensamos de forma diferente"
       subtitle="Nossos Diferenciais"
+      id="nossos-diferenciais"
     >
       <div className={styles.featuresContainer}>
         {features.map((feature) => (
