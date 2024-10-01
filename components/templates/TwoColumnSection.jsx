@@ -1,8 +1,8 @@
 import styles from "./template.module.css";
 
-const TwoColumnSection = ({ subtitle, title, paragraph, children }) => {
+const TwoColumnSection = ({ subtitle, title, paragraph, id, children }) => {
   return (
-    <section className={styles.sectionContainer}>
+    <section className={styles.sectionContainer} id={id}>
       <div className={styles.twoColumnContentWrapper}>
         <div className={styles.twoColumnTextContent}>
           <span className={styles.subtitle}>{subtitle}</span>

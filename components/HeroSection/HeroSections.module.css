@@ -1,11 +1,11 @@
 .heroSection {
   position: relative;
   display: flex;
-  min-height: 80vh;
+  min-height: calc(100vh - var(--header-height));
   background-color: rgba(15, 23, 42, 0.3);
   background: linear-gradient(
     to bottom,
-    var(--color-primary-900),
+    var(--color-primary-900) var(--header-height),
     var(--color-palette-dark)
   );
 }
@@ -52,13 +52,6 @@
   .title {
     font-size: 3.75rem;
   }
-}
-
-.subtitle {
-  margin-bottom: 1.5rem;
-  max-width: 32rem;
-  font-weight: 300;
-  color: rgba(203, 213, 224, 0.87);
 }
 
 @media (min-width: 1024px) {

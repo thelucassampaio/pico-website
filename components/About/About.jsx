@@ -53,6 +53,7 @@ const About = () => {
       paragraph="A Pico nasceu da união de profissionais com atuação em grandes
             instituições financeiras e renomados escritórios de advocacia no
             Brasil e na Europa."
+      id="sobre"
     >
       <div className={styles.certifications}>
         <p className={styles.paragraph}>
