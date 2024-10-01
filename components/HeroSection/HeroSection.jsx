@@ -3,6 +3,8 @@ import Image from "next/image";
 import localFont from "next/font/local";
 
 import styles from "./HeroSections.module.css";
+import LogoWithText from "@/utils/logo/LogoWithText";
+import Logo from "@/utils/logo/Logo";
 
 const CalyaFont = localFont({
   src: "../../app/fonts/Calya.otf",
@@ -16,12 +18,9 @@ const HeroSection = () => {
       <div className={styles.contentWrapper}>
         <div className={styles.content}>
           <div className={styles.logoContainer}>
-            <Image
-              src="/logo-white.png"
-              width={68}
-              height={68}
-              priority
-              alt="Logo da Pico Investimentos"
+            <Logo
+              aria-label="Logo da Pico Investimentos"
+              width={200}
               className={styles.logo}
             />
           </div>

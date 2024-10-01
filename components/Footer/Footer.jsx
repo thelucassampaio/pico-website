@@ -5,6 +5,7 @@ import Instagram from "@/utils/icons/Instagram";
 import LinkedIn from "@/utils/icons/LinkedIn";
 import Phone from "@/utils/icons/Phone";
 import Email from "@/utils/icons/Email";
+import Logo from "@/utils/logo/Logo";
 
 const Footer = () => {
   return (
@@ -12,12 +13,9 @@ const Footer = () => {
       <div className={styles.footerContainer}>
         <div className={styles.columns}>
           <div className={styles.company}>
-            <Image
-              src="/logo-white.png"
-              width={100}
-              height={100}
-              priority
-              alt="Logo da Pico Investimentos"
+            <Logo
+              width={300}
+              aria-label="Logo da Pico Investimentos"
               className={styles.logo}
             />
             <h1 role="h3">Pico Investimentos</h1>

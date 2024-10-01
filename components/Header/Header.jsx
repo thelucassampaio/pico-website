@@ -7,6 +7,7 @@ import {
   menuItemsLeft,
   menuItemsRight,
 } from "@/utils/navigationItems";
+import Logo from "@/utils/logo/Logo";
 
 const Header = () => {
   return (
@@ -22,12 +23,7 @@ const Header = () => {
       </div>
       <div className={styles.headerLogoContainer}>
         <a href="/" title="Ir para o início">
-          <Image
-            src="/logo-white.png"
-            alt="Logo da Pico Investimentos"
-            width={60}
-            height={60}
-          />
+          <Logo width={180} />
         </a>
       </div>
       <div className={styles.headerLinks}>
