@@ -2,36 +2,11 @@ import Image from "next/image";
 
 import styles from "./Header.module.css";
 import MobileMenu from "./components/MobileMenu";
-
-const menuItemsLeft = [
-  {
-    title: "Sobre",
-    href: "/#sobre",
-  },
-  {
-    title: "Diferenciais",
-    href: "/#nossos-diferenciais",
-  },
-  {
-    title: "Abordagem",
-    href: "/#nossa-abordagem",
-  },
-];
-
-const menuItemsRight = [
-  {
-    title: "Insights",
-    href: "/#insights",
-  },
-  {
-    title: "Contato",
-    href: "/#contato",
-  },
-  {
-    title: "Simulação",
-    href: "/#simulacao",
-  },
-];
+import {
+  menuItems,
+  menuItemsLeft,
+  menuItemsRight,
+} from "@/utils/navigationItems";
 
 const Header = () => {
   return (
@@ -64,7 +39,7 @@ const Header = () => {
           ))}
         </ul>
       </div>
-      <MobileMenu items={[...menuItemsLeft, ...menuItemsRight]} />
+      <MobileMenu items={menuItems} />
     </div>
   );
 };
