@@ -1,6 +1,7 @@
 .sectionContainer {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   padding-block: 48px;
   background-color: var(--color-palette-dark);
   color: var(--text-white);
@@ -45,7 +46,7 @@
 .subtitle {
   text-transform: uppercase;
   margin-bottom: 16px;
-  font-size: 0.8125rem;
+  font-size: 0.825rem;
   font-weight: 600;
   letter-spacing: 2px;
   opacity: 0.8;
@@ -64,4 +65,8 @@
   width: 40px;
   margin-block: 32px;
   background-color: var(--color-palette-highlight);
+}
+
+.flexDirectionColumn {
+  flex-direction: column;
 }
