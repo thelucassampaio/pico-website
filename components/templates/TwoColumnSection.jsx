@@ -1,8 +1,20 @@
 import styles from "./template.module.css";
 
-const TwoColumnSection = ({ subtitle, title, paragraph, id, children }) => {
+const TwoColumnSection = ({
+  subtitle,
+  title,
+  paragraph,
+  id,
+  children,
+  leftAlign,
+}) => {
   return (
-    <section className={styles.sectionContainer} id={id}>
+    <section
+      className={`${leftAlign && styles.flexDirectionColumn} ${
+        styles.sectionContainer
+      }`}
+      id={id}
+    >
       <div className={styles.twoColumnContentWrapper}>
         <div className={styles.twoColumnTextContent}>
           <span className={styles.subtitle}>{subtitle}</span>
@@ -14,8 +26,9 @@ const TwoColumnSection = ({ subtitle, title, paragraph, id, children }) => {
             paragraph
           )}
         </div>
-        <>{children}</>
+        {!leftAlign && <>{children}</>}
       </div>
+      {leftAlign && <>{children}</>}
     </section>
   );
 };

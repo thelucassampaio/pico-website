@@ -64,6 +64,7 @@ const Approach = () => {
       subtitle="Nossa abordagem"
       paragraph={<ApproachDetails />}
       id="nossa-abordagem"
+      leftAlign
     >
       <div className={styles.timelineContainer}>
         {timeline.map((item) => (
