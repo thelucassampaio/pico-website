@@ -34,16 +34,17 @@ const certificates = [
     name: "Certificado CPA-20",
     agency: "ANBIMA",
   },
+  {
+    stampUrl: "/certificates/Selo-PLANEJAR-CFP.png",
+    name: "CFP – Certified Financial Planner",
+    agency: "PLANEJAR",
+  },
 ];
-
 {
   /* 
-          CFP – Certified Financial Planner / Certificado internacional de
-          planejamento financeiro, emitido pela PLANEJAR
-          <br />
-          XXX – Analista Fundamentalista com certificado de competência,
-          emitido pela APIMEC
-           */
+  XXX – Analista Fundamentalista com certificado de competência,
+  emitido pela APIMEC
+   */
 }
 const About = () => {
   return (

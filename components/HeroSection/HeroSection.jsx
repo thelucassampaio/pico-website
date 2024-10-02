@@ -17,9 +17,9 @@ const HeroSection = () => {
         <div className={styles.content}>
           <div className={styles.logoContainer}>
             <Image
-              src="/logo-white.png"
-              width={68}
-              height={68}
+              src="/logo.png"
+              width={150}
+              height={150}
               priority
               alt="Logo da Pico Investimentos"
               className={styles.logo}

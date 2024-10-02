@@ -1,10 +1,11 @@
 import Image from "next/image";
-import styles from "./Footer.module.css";
-import { menuItems } from "@/utils/navigationItems";
+
 import Instagram from "@/utils/icons/Instagram";
 import LinkedIn from "@/utils/icons/LinkedIn";
 import Phone from "@/utils/icons/Phone";
 import Email from "@/utils/icons/Email";
+
+import styles from "./Footer.module.css";
 
 const Footer = () => {
   return (
@@ -13,14 +14,12 @@ const Footer = () => {
         <div className={styles.columns}>
           <div className={styles.company}>
             <Image
-              src="/logo-white.png"
-              width={100}
-              height={100}
-              priority
+              src="/logo-with-text.png"
+              width={320}
+              height={48}
               alt="Logo da Pico Investimentos"
-              className={styles.logo}
+              className={styles.companyLogo}
             />
-            <h1 role="h3">Pico Investimentos</h1>
             <div className={styles.socialMediaContainer}>
               <a href="/#instagram-link" title="Nosso Instagram">
                 <Instagram />
@@ -32,7 +31,7 @@ const Footer = () => {
           </div>
           <div className={styles.info}>
             <h3 role="h4">Endereço</h3>
-            <p>Av. Faria Lima, 1234</p>
+            <p>Av. Brigadeiro Faria Lima, 1234</p>
             <div>
               <div className={styles.infoWithIcon}>
                 <Phone />

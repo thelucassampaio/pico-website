@@ -23,10 +23,12 @@ const Header = () => {
       <div className={styles.headerLogoContainer}>
         <a href="/" title="Ir para o início">
           <Image
-            src="/logo-white.png"
+            src="/logo.png"
+            width={68}
+            height={68}
+            priority
             alt="Logo da Pico Investimentos"
-            width={60}
-            height={60}
+            className={styles.logo}
           />
         </a>
       </div>
